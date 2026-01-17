@@ -20,13 +20,9 @@ main {
 main img {
     width: 150px;
     height: auto;
-}
-
-img {
-    width: 150px;
-    height: auto;
     border: 1px solid black;
     box-shadow: 0 0 30px gray;
+    padding: 2px;
 }
 
 p {
@@ -37,6 +33,7 @@ aside {
     width: 20rem;
     margin: 1rem;
     border: 1px solid rgb(0, 0, 0 / 0.2);
+    padding: 1em;
     background-color: #eee;
     color: #333;
     text-align: center;
