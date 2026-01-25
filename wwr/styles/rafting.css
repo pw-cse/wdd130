@@ -1,0 +1,120 @@
+/* ================================
+   CSS Variables
+   ================================ */
+:root {
+    /* Fonts */
+    --heading-font: "Georgia", "Times New Roman", serif;
+    --body-font: "Roboto", "Helvetica Neue", Arial, sans-serif;
+
+    /* Color Scheme */
+    --primary-color: #1f5f4a;
+    /* Forest Green */
+    --secondary-color: #8b8f8a;
+    /* River Stone Grey */
+    --accent-color: #4da3c7;
+    /* Sky Blue */
+    --accent-alt-color: #f2c94c;
+    /* Sunny Yellow */
+
+    --background-color: #ffffff;
+    --text-color: #2b2b2b;
+}
+
+/* ================================
+   CSS Reset (Box Model)
+   ================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================================
+   Global Styles
+   ================================ */
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+/* ================================
+   Page Width & Centering
+   ================================ */
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+/* ================================
+   Headings
+   ================================ */
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+/* ================================
+   Basic Spacing
+   ================================ */
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* ================================
+   Footer Social Media Links
+   ================================ */
+.socialmedia a {
+    text-decoration: none;
+}
+
+/* ================================
+   Hero Section
+   ================================ */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    background-color: var(--accent-color);
+    color: #ffffff;
+    opacity: 0.85;
+}
+
+/* ================================
+   Hero Article Overlay
+   ================================ */
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    padding: 16px;
+    opacity: 0.9;
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+    margin-left: 16px;
+}
