@@ -111,6 +111,7 @@ footer {
 ul {
     list-style: none;
     padding: 1rem;
+    border: 1px solid #0a66c2;
 }
 
 /* Class Selectors */
