@@ -113,6 +113,10 @@ footer {
     text-align: center; */
 }
 
+footer p {
+    color: #fff;
+}
+
 ul {
     list-style: none;
     padding: 1rem;
@@ -126,9 +130,4 @@ ul {
     border: 1px solid #0a66c2;
     color: var(--accent-color);
     background-color: var(--accent-color);
-}
-
-.grid {
-    display: grid;
-
 }
