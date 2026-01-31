@@ -52,7 +52,6 @@ footer {
 h1,
 h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
 }
 
 /* ================================
@@ -205,7 +204,7 @@ h1 {
     padding: 16px;
     text-align: center;
     background-color: var(--accent-color);
-    color: #ffffff;
+    color: #fff;
     opacity: 0.85;
 }
 
