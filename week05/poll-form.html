@@ -4,45 +4,68 @@
 <head>
     <meta charset="UTF-8">
     <title>HTML Form - User Poll</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="poll-form.css">
 </head>
 
 <body>
 
-    <h1>WDD 130 | HTML Form - User Poll</h1>
+    <header>
+        <h1>WDD 130 | HTML Form - User Poll</h1>
+    </header>
 
-    <form>
-        <fieldset>
-            <legend>Contact Information</legend>
+    <main>
+        <form>
 
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name">
+            <!-- Contact Information -->
+            <fieldset>
+                <legend>Contact Information</legend>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
-        </fieldset>
+                <div class="form-item column2">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
 
-        <fieldset>
-            <legend>Questions</legend>
+                <div class="form-item column2">
+                    <label for="useremail">Email:</label>
+                    <input type="email" id="useremail" name="useremail" required>
+                </div>
 
-            <label for="browser">What is your favorite internet browser?</label>
-            <select id="browser" name="browser">
-                <option value="chrome">Chrome</option>
-                <option value="firefox">Firefox</option>
-                <option value="edge">Edge</option>
-                <option value="safari">Safari</option>
-                <option value="other">Other</option>
-            </select>
+            </fieldset>
 
-            <label>Do you have a household pet?<input type="checkbox" name="pet" id="pet"></label>
+            <!-- Questions -->
+            <fieldset>
+                <legend>Questions</legend>
 
-            <label for="feedback">List the places you have lived:</label>
-            <textarea id="feedback" name="feedback" rows="4"
-              placeholder="Florida, Amsterdam Netherlands, Timbuktu Mali"></textarea>
-        </fieldset>
+                <div class="form-item column1">
+                    <label for="browser">What is your favorite internet browser?</label>
+                    <select id="browser" name="browser">
+                        <option value="chrome">Chrome</option>
+                        <option value="safari">Safari</option>
+                        <option value="edge">Edge</option>
+                        <option value="brave">Brave</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
 
-        <button type="submit">Submit Poll</button>
-    </form>
+                <div class="form-item column1">
+                    <label for="pet">Do you have a household pet?</label>
+                    <input type="checkbox" id="pet" name="pet">
+                </div>
+
+                <div class="form-item">
+                    <label for="feedback">List the places you have lived:</label>
+                    <textarea id="feedback" name="feedback" rows="4"
+                      placeholder="Stillwater Florida, Amsterdam Netherlands, Timbuktu Mali">
+          </textarea>
+                </div>
+
+            </fieldset>
+
+            <!-- Submit -->
+            <button type="submit">Submit Poll</button>
+
+        </form>
+    </main>
 
     <footer>
         <p>©2024 | HTML Form - User Pol Activity | Charles Koui</p>
