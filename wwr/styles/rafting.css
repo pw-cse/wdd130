@@ -343,8 +343,59 @@ footer p {
     border-radius: 4px;
 }
 
-/* --- Contact Form --- */
-/* Form container */
+/* ================================
+   Contact Page – Main Content
+   ================================ */
+
+/* --- Company Info --- */
+.contact-info {
+    text-align: center;
+    margin: 32px 16px 16px;
+}
+
+.contact-info h1 {
+    position: static;
+    /* override hero */
+    background: none;
+    padding: 0;
+    margin-bottom: 8px;
+    font-size: 2.5em;
+    color: #000;
+}
+
+.company-details address {
+    font-style: normal;
+    line-height: 1.5;
+    font-size: 1em;
+}
+
+.company-details a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* --- Layout: Map + Form --- */
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 24px;
+    margin: 32px 16px;
+    align-items: start;
+}
+
+/* --- Map --- */
+.map-container {
+    display: flex;
+    justify-content: center;
+}
+
+.map-container iframe {
+    max-width: 320px;
+    height: 260px;
+    border-radius: 4px;
+}
+
+/* --- Contact Form Container --- */
 .contact-form {
     background-color: #ffffff;
     padding: 24px;
@@ -353,15 +404,14 @@ footer p {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
-/* Fieldsets */
+/* --- Fieldsets --- */
 .contact-form fieldset {
     border: 1px solid #d1d1d1;
     border-radius: 6px;
-    padding: 16px 18px 18px;
+    padding: 16px 18px;
     margin-bottom: 18px;
 }
 
-/* Legends */
 .contact-form legend {
     font-size: 1.1em;
     font-weight: 600;
@@ -369,14 +419,7 @@ footer p {
     color: #222;
 }
 
-/* Labels */
-.contact-form label {
-    font-size: 0.95em;
-    font-weight: 500;
-    color: #333;
-}
-
-/* Name & Email grid */
+/* --- Contact Info (Name / Email) --- */
 .contact-form fieldset.column1 {
     display: grid;
     grid-template-columns: 110px 1fr;
@@ -384,33 +427,27 @@ footer p {
     align-items: center;
 }
 
-/* Message Purpose layout */
+/* --- Message Purpose (FIXED layout) --- */
 .contact-form fieldset.column2 {
     display: grid;
     grid-template-columns: 140px 1fr;
     align-items: start;
 }
 
-/* Keep legend full width */
 .contact-form fieldset.column2 legend {
     grid-column: 1 / -1;
 }
 
-/* Move ALL radio labels to column 2 */
 .contact-form fieldset.column2 label {
     grid-column: 2;
     display: flex;
     align-items: center;
     gap: 8px;
     margin-bottom: 8px;
+    font-size: 0.95em;
 }
 
-/* Optional: tighten radio alignment */
-.contact-form fieldset.column2 input[type="radio"] {
-    margin: 0;
-}
-
-/* Inputs */
+/* --- Inputs --- */
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
@@ -420,42 +457,22 @@ footer p {
     border-radius: 6px;
     border: 1px solid #cfcfcf;
     background-color: #fafafa;
-    transition: border-color 0.2s, box-shadow 0.2s;
 }
 
-/* Input focus */
-.contact-form input:focus,
-.contact-form textarea:focus {
-    outline: none;
-    border-color: #2b6f8f;
-    box-shadow: 0 0 0 3px rgba(43, 111, 143, 0.15);
-    background-color: #ffffff;
+.contact-form textarea {
+    min-height: 120px;
+    resize: vertical;
 }
 
-/* Radio buttons */
-.contact-form fieldset.column2 label {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 8px;
-    font-size: 0.95em;
-}
-
+/* --- Radio & Checkbox --- */
 .contact-form input[type="radio"],
 .contact-form input[type="checkbox"] {
     width: 18px;
     height: 18px;
-    accent-color: #2b6f8f;
+    accent-color: var(--accent-color);
 }
 
-/* Textarea */
-.contact-form textarea {
-    min-height: 120px;
-    resize: vertical;
-    margin-top: 6px;
-}
-
-/* Newsletter checkbox */
+/* --- Newsletter --- */
 .contact-form fieldset:last-of-type label {
     display: flex;
     align-items: center;
@@ -463,9 +480,8 @@ footer p {
     font-size: 0.9em;
 }
 
-/* Submit button */
+/* --- Submit Button --- */
 .contact-form button {
-    display: block;
     width: 100%;
     padding: 14px;
     margin-top: 10px;
@@ -476,16 +492,9 @@ footer p {
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Button hover */
-.contact-form button:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-
-/* --- Employee Section --- */
+/* --- Employees Section --- */
 .employees {
     margin: 40px 16px;
 }
@@ -505,5 +514,4 @@ footer p {
     width: 140px;
     height: 140px;
     border-radius: 4px;
-    /* square images like wireframe */
 }
