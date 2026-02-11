@@ -62,16 +62,22 @@
 
                     <fieldset class="column2">
                         <legend>Message Purpose</legend>
-                        <label>
-                            <input type="radio" name="purpose" value="general" checked>
+
+                        <label for="purpose-general">
+                            <input type="radio" id="purpose-general" name="purpose" value="general"
+                              checked>
                             General Inquiry
                         </label>
-                        <label>
-                            <input type="radio" name="purpose" value="reservation">
+
+                        <label for="purpose-reservation">
+                            <input type="radio" id="purpose-reservation" name="purpose"
+                              value="reservation">
                             Reservation Question
                         </label>
-                        <label>
-                            <input type="radio" name="purpose" value="suggestion">
+
+                        <label for="purpose-suggestion">
+                            <input type="radio" id="purpose-suggestion" name="purpose"
+                              value="suggestion">
                             Website Suggestion
                         </label>
                     </fieldset>
@@ -82,12 +88,11 @@
                         <textarea id="message" name="message" rows="6" required></textarea>
                     </fieldset>
 
-                    <fieldset>
-                        <label>
-                            <input type="checkbox" name="newsletter" value="yes">
-                            Please subscribe me to the monthly newsletter
-                        </label>
-                    </fieldset>
+                    <label for="newsletter">
+                        <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                        Please subscribe me to the monthly newsletter
+                    </label>
+
 
                     <button type="submit">Get in Touch!</button>
                 </form>
