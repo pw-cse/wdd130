@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | White Water Rafting</title>
+
+    <meta name="description"
+      content="Contact our white water rafting company with questions, booking inquiries, or to plan your next adventure.">
+    <meta name="author" content="Charles Koui">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="images/logo.jpeg" alt="White Water Rafting Logo">
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-info">
+            <h1>White Water Rafting Company</h1>
+            <div class="company-details">
+                <address>
+                    Abobo BC Pres du Palais de Justice<br>
+                    Abidjan, Cote d'Ivoire<br>
+                    +225 0554 001 553<br>
+                    <a href="mailto:info@whitewater.com">info@whitewater.com</a>
+                </address>
+            </div>
+        </section>
+
+        <section class="contact-layout">
+            <div class="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d63549.22952391684!2d-4.092922210693379!3d5.443243842672535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sci!4v1770846244017!5m2!1sfr!2sci"
+                  width="600" height="450" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+            <div class="contact-form-container">
+                <form class="contact-form" method="get" action="thank-you.html">
+                    <fieldset class="column1">
+                        <legend>Contact Information</legend>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </fieldset>
+
+                    <fieldset class="column2">
+                        <legend>Message Purpose</legend>
+                        <label>
+                            <input type="radio" name="purpose" value="general" checked>
+                            General Inquiry
+                        </label>
+                        <label>
+                            <input type="radio" name="purpose" value="reservation">
+                            Reservation Question
+                        </label>
+                        <label>
+                            <input type="radio" name="purpose" value="suggestion">
+                            Website Suggestion
+                        </label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Your Message</legend>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </fieldset>
+
+                    <fieldset>
+                        <label>
+                            <input type="checkbox" name="newsletter" value="yes">
+                            Please subscribe me to the monthly newsletter
+                        </label>
+                    </fieldset>
+
+                    <button type="submit">Get in Touch!</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="employees">
+            <h2>We Are Here to Serve You</h2>
+            <div class="employee-profiles">
+                <figure>
+                    <img src="images/employee1.jpg" alt="Sarah Johnson, River Guide">
+                    <figcaption>Sarah Johnson<br><span>Lead River Guide</span></figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee2.jpg" alt="Mike Chen, Safety Director">
+                    <figcaption>Mike Chen<br><span>Safety Director</span></figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee3.jpg" alt="Emma Rodriguez, Operations Manager">
+                    <figcaption>Emma Rodriguez<br><span>Operations Manager</span></figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            © 2026 White Water Rafting | Charles Koui
+        </p>
+
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="images/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://linkedin.com">
+                <img src="images/linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.png" alt="Instagram">
+            </a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
