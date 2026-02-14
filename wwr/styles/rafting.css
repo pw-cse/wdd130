@@ -26,9 +26,9 @@
     --other-color: #fafafa;
 
     /* Shadows */
-    --shadow-soft: rgba(0, 0, 0, 0.08);
-    --shadow-medium: rgba(0, 0, 0, 0.2);
-    --shadow-hard: rgba(0, 0, 0, 0.15)
+    --shadow-soft: #00000014;
+    --shadow-medium: #00000033;
+    --shadow-hard: #00000026;
 }
 
 /* ================================
