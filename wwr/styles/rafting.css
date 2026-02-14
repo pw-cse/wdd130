@@ -28,6 +28,7 @@
     /* Shadows */
     --shadow-soft: rgba(0, 0, 0, 0.08);
     --shadow-medium: rgba(0, 0, 0, 0.2);
+    --shadow-hard: rgba(0, 0, 0, 0.15)
 }
 
 /* ================================
@@ -175,7 +176,7 @@ section h2 {
     height: 150px;
     object-fit: cover;
     border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 6px var(--shadow-hard);
 }
 
 .adventure-gallery figcaption {
@@ -241,7 +242,7 @@ h1 {
     width: 125px;
     margin-left: 16px;
     border: 2px solid var(--background-color);
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 2px 6px var(--shadow-medium);
 }
 
 /* Footer Styles */
@@ -316,7 +317,7 @@ footer p {
     background-color: var(--background-color);
     padding: 24px;
     border-radius: 10px;
-    border: 1px solid #e0e0e0;
+    border: 1px solid var(--border-light);
     box-shadow: 0 10px 25px var(--shadow-soft);
 }
 
@@ -403,7 +404,7 @@ footer p {
     font-size: 1.05em;
     font-weight: 600;
     color: var(--background-color);
-    background: linear-gradient(135deg, #2b6f8f, #1f5f4a);
+    background: linear-gradient(135deg, var(--accent-color), var(--primary-color));
     border: none;
     border-radius: 8px;
     cursor: pointer;
