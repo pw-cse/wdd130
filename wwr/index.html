@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | White Water Rafting</title>
+    <title>Trips | White Water Rafting</title>
 
     <meta name="description"
-      content="Experience unforgettable white water rafting adventures. Explore rivers, rapids, and camping trips with Dry Oar—where thrill meets breathtaking scenery.">
+      content="Explore our white water rafting trips—from beginner-friendly rivers to adrenaline-filled rapids. Find trip details, pricing, and available adventures.">
     <meta name="author" content="Charles Koui">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
@@ -29,51 +29,108 @@
 
     <main>
 
-        <section class="hero hero-home">
-            <img src="images/hero.jpg" alt="Group white water rafting through rapids">
-
-            <div class="hero-content">
-                <h1>Have an Adventure</h1>
-                <p>Make Memories with Dry Oar</p>
-                <a href="trips.html" class="btn-primary">Book Now</a>
-            </div>
+        <!-- CALL TO ACTION -->
+        <section class="trips-cta">
+            <h1>Choose Your Adventure</h1>
+            <p>
+                Whether you’re new to rafting or a seasoned thrill-seeker, we have the perfect
+                trip waiting for you.
+            </p>
+            <a href="contact.html" class="btn-primary">Contact Us to Book</a>
         </section>
 
-        <!-- FEATURES -->
-        <section class="features">
-            <div class="feature">
-                <img src="images/adventure2.jpg" alt="Scenic river">
-                <h3>Rivers</h3>
-            </div>
+        <!-- TRIP DESCRIPTIONS -->
+        <section class="trip-cards">
 
-            <div class="feature">
-                <img src="images/adventure3.jpg" alt="Mountain camping">
-                <h3>Camping</h3>
-            </div>
+            <article class="trip-card">
+                <img src="images/adventure2.jpg" alt="Calm river rafting trip">
+                <div class="trip-info">
+                    <h2>Family River Float</h2>
+                    <p>
+                        A relaxed and scenic trip perfect for families and beginners.
+                        Enjoy gentle rapids, wildlife views, and calm waters.
+                    </p>
+                    <ul>
+                        <li>Difficulty: Easy</li>
+                        <li>Duration: Half Day</li>
+                        <li>Minimum Age: 6</li>
+                    </ul>
+                </div>
+            </article>
 
-            <div class="feature">
-                <img src="images/adventure4.jpg" alt="White water rapids">
-                <h3>Rapids</h3>
-            </div>
+            <article class="trip-card">
+                <img src="images/adventure3.jpg" alt="Mountain rafting adventure">
+                <div class="trip-info">
+                    <h2>Mountain Rapids Run</h2>
+                    <p>
+                        A high-energy rafting experience featuring fast-moving water,
+                        sharp turns, and unforgettable splashes.
+                    </p>
+                    <ul>
+                        <li>Difficulty: Intermediate</li>
+                        <li>Duration: Full Day</li>
+                        <li>Minimum Age: 12</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="trip-card">
+                <img src="images/adventure4.jpg" alt="Extreme white water rafting">
+                <div class="trip-info">
+                    <h2>Extreme White Water Expedition</h2>
+                    <p>
+                        Designed for experienced rafters seeking the ultimate adrenaline rush.
+                        Tackle powerful rapids with expert guides.
+                    </p>
+                    <ul>
+                        <li>Difficulty: Advanced</li>
+                        <li>Duration: 2 Days</li>
+                        <li>Minimum Age: 16</li>
+                    </ul>
+                </div>
+            </article>
+
         </section>
 
-        <!-- PROMO SECTION -->
-        <section class="promo">
-            <div class="promo-image">
-                <img src="images/adventure5.jpg" alt="Mountain valley scenery">
-            </div>
+        <!-- TRIPS TABLE -->
+        <section class="trip-table-section">
+            <h2>Available Trips Overview</h2>
 
-            <div class="promo-card">
-                <h2>More Than Just The Thrill</h2>
-                <p>
-                    Enjoy the breathtaking scenery from valleys, meadows, canyons, and
-                    high peaks. It’s way more than just the rapids—it’s a great way to get
-                    away from it all and relax amongst the beauty of the great outdoors.
-                </p>
-                <a href="contact.html" class="btn-secondary">Join Us</a>
-            </div>
+            <table class="trips-table">
+                <thead>
+                    <tr>
+                        <th>Trip Name</th>
+                        <th>Difficulty</th>
+                        <th>Duration</th>
+                        <th>Price</th>
+                        <th>Minimum Age</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Family River Float</td>
+                        <td>Easy</td>
+                        <td>Half Day</td>
+                        <td>$75</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Mountain Rapids Run</td>
+                        <td>Intermediate</td>
+                        <td>Full Day</td>
+                        <td>$140</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>Extreme White Water Expedition</td>
+                        <td>Advanced</td>
+                        <td>2 Days</td>
+                        <td>$320</td>
+                        <td>16</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
-
 
     </main>
 
