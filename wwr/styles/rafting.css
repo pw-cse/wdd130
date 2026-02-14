@@ -632,11 +632,18 @@ footer p {
 }
 
 /* ---------- TRIP CARDS ---------- */
+
 .trip-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 32px;
     margin: 80px 16px;
+}
+
+.trip-cards h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 .trip-card {
