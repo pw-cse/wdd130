@@ -417,6 +417,11 @@ footer p {
     box-shadow: 0 8px 16px var(--shadow-medium);
 }
 
+.contact-form button:focus-visible {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 3px;
+}
+
 /* Employees */
 .employees {
     margin: 40px 16px;
